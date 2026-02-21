@@ -1,10 +1,9 @@
 import type { Metadata } from "next"
 import "./globals.css"
-import { PageTransitionProvider } from "@/components/PageTransitionProvider"
 
 export const metadata: Metadata = {
-  title: "Freelance Services - Personal Training, Web Design, SEO & App Development",
-  description: "Professional freelance services including personal training, web design, SEO writing, and application development.",
+  title: "時間割管理ツール",
+  description: "大学の時間割を簡単に管理できるツールです。科目の登録・編集・削除やエクスポート・インポートに対応しています。",
 }
 
 export default function RootLayout({
@@ -14,10 +13,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className="min-h-screen bg-white text-gray-900 antialiased">
-        <PageTransitionProvider>
-          {children}
-        </PageTransitionProvider>
+      <body className="min-h-screen bg-gray-50 text-gray-900 antialiased">
+        {children}
       </body>
     </html>
   )
