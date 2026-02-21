@@ -1,38 +1,37 @@
-# Freelance Portfolio Website
+# 大学時間割管理ツール
 
-A modern, animated portfolio website built with Next.js, Framer Motion, and Three.js.
+大学の時間割をブラウザ上で簡単に管理できるWebアプリケーションです。
 
-## Features
+## 機能
 
-- 🎨 Clean grid design with white and gray color scheme
-- ✨ Smooth page transitions with Framer Motion
-- 🎭 3D animated background using Three.js
-- 📱 Fully responsive design
-- 🚀 Built with Next.js App Router
-- 💅 Styled with Tailwind CSS and shadcn/ui
+- **時間割グリッド表示**: 月〜土曜日、1限〜6限のグリッド形式で時間割を一覧表示
+- **授業の登録・編集・削除**: モーダルUIで科目名・担当教員・教室・メモなどを管理
+- **カラーラベル**: 8色のカラーラベルで授業を視覚的に区別
+- **統計表示**: 登録科目数・合計授業時間・授業日数をリアルタイム表示
+- **学期名編集**: 「2026年度 前期」などの学期名を自由に設定
+- **エクスポート/インポート**: JSON形式でデータの書き出し・読み込みが可能
+- **データ永続化**: ブラウザのローカルストレージに自動保存
 
-## Services Showcased
+## 技術スタック
 
-- Personal Training
-- Web Design
-- SEO Writing
-- Application Development
-
-## Tech Stack
-
-- Next.js 15
+- Next.js 15 (App Router)
 - React 19
 - TypeScript
 - Tailwind CSS
-- Framer Motion
-- Three.js
-- shadcn/ui
+- Lucide React (アイコン)
 
-## Getting Started
+## セットアップ
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the website.
+[http://localhost:3000](http://localhost:3000) を開いてアプリケーションを使用できます。
+
+## 使い方
+
+1. 時間割の空きセル（+ボタン）をクリックして授業を追加
+2. 登録済みの授業をクリックして編集・削除
+3. ヘッダーの「エクスポート」でデータをJSONファイルとして保存
+4. 「インポート」で保存したJSONファイルからデータを復元
